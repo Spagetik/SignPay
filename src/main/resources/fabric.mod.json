@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "signpay",
+  "version": "${version}",
+  "name": "Signpay",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/signpay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.spagetik.signpay.client.SignpayClient"
+    ],
+    "main": [
+      "org.spagetik.signpay.Signpay"
+    ],
+    "modmenu": [
+      "org.spagetik.signpay.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "signpay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.7",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
